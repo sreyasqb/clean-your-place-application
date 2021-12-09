@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/detbg2"
+    tools:context=".DetailsLoc">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Dtitle"
+        android:layout_width="188dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/changa_extralight"
+        android:gravity="center"
+        android:hint="Title...."
+        android:textColor="#D6CDCD"
+        android:textColorHint="#D1C5C5"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Ddesc"
+        android:layout_width="330dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="80dp"
+        android:background="#BDB1B1"
+        android:gravity="center"
+        android:hint="Enter Description of the place...."
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dtitle" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Dadd"
+        android:layout_width="300dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="44dp"
+        android:background="#D1CDCD"
+        android:gravity="center"
+        android:hint="Enter the Address here..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ddesc" />
+
+    <Button
+        android:id="@+id/Dsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:backgroundTint="#17B11D"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dadd" />
+
+    <Button
+        android:id="@+id/Dback"
+        android:layout_width="79dp"
+        android:layout_height="47dp"
+        android:text="Back"
+        app:backgroundTint="#3F51B5"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Ddesc"
+        app:layout_constraintEnd_toStartOf="@+id/Dtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Dnext"
+        android:layout_width="79dp"
+        android:layout_height="47dp"
+        android:text="Next"
+        app:backgroundTint="#3F51B5"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/Ddesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Dtitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Did"
+        android:layout_width="113dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="none"
+        android:textColor="#2196F3"
+        android:textSize="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/Ddesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dtitle"
+        app:layout_constraintVertical_bias="0.44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
